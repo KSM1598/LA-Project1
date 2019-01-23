@@ -34,7 +34,6 @@ def dbconnect(database_name="news"):
     try:
         cnxn = psycopg2.connect("dbname={}".format(database_name))
         cursor = cnxn.cursor()
-        print("Connection Established")
         return cnxn, cursor
     except Exception:
         print("Unable to connect to the database")
