@@ -1,4 +1,12 @@
-# LA-Project1
+LOG ANALYSIS:
+
+->Description:
+	->Log Analysis project deals with a huge data records in the form of tables like authors, articles and log.
+	  The data present in these tables are used in finding the following results:
+		i)	What are the most popular three articles of all time?
+		ii)	Who are the most popular article authors of all time?
+		iii)On which days did more than 1% of the requests lead to errors?
+
 ->The Required Software Installations:
 	->python
 	->vagrant
@@ -33,5 +41,5 @@
 
 ->Copy the data from newsdata.sql file to the news database:
 	->psql -d news -f newsdata.sql
-	
+
 ->Run the python file "newsdataa.py" from vagrant.
