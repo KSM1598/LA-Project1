@@ -42,7 +42,7 @@ def dbconnect(database_name="news"):
 
 def exec_query1(q):
     cnxn, cursor = dbconnect()
-#   cursor.execute(q)
+    cursor.execute(q)
     qt = ("select * from articles_view;")
     cursor.execute(qt)
     cnxn.commit()
@@ -52,7 +52,7 @@ def exec_query1(q):
 
 def exec_query2(q):
     cnxn, cursor = dbconnect()
-#   cursor.execute(q)
+    cursor.execute(q)
     qt = ("select * from authors_view;")
     cursor.execute(qt)
     cnxn.commit()
@@ -62,7 +62,7 @@ def exec_query2(q):
 
 def exec_query3(q):
     cnxn, cursor = dbconnect()
-#   cursor.execute(q)
+    cursor.execute(q)
     qt = ("select * from log_errors;")
     cursor.execute(qt)
     cnxn.commit()
